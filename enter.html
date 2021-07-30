@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Enter</title>
+        <link rel="stylesheet" href="css.css" type="text/css">
+       <style> 
+    body {background-image: url(img/1.jpg)}
+    </style>
+    </head>
+    <body >
+<form id="form">
+    <fieldset>
+        <legend>Страница входа пользователя</legend>
+        <p><label for='email'>E-mail</label><input type='text' autofocus name='email' id='email' pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required></p>
+        <p><label for='key'>Пароль</label><input type='text' id='key' required></p>
+        <p><input id='send' type='submit' value="Вход" /></p>
+        <p><a href='registration.html'>Зарегестрироваться</p>
+    </fieldset>
+
+</form>
+<script src='java_script_enter.js'></script>
+    </body>
+</html>

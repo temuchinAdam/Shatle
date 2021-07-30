@@ -1,0 +1,26 @@
+p {color:red;
+font-size: 20px;}
+#key {color:blue;}
+input{
+    color:red;}
+    form{background-color: rgb(226, 183, 148);}
+legend{font-size: 40px;}
+
+    
+    form{margin:100px;
+    padding: 10px;
+    opacity:0.5;}
+form:hover{opacity:0.8;}
+input:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px solid black
+}
+#welcome{color: orange;
+font-size: 150px;
+position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
