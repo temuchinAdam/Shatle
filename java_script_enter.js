@@ -26,13 +26,17 @@ form?.addEventListener('submit', (event) => {
   onSubmit()
 }) 
 
-emailField?.addEventListener('focus', () => {
+
+function enter(){
   for (j=0; j<users.length; j++){
     if (users[j].log === localStorage.getItem('email') && users[j].pass === localStorage.getItem('pass')){
       return location.href = 'main_file.html'
+      
     }
   }
-})
+}
+
+enter()
 
 emailField?.addEventListener('change', () => {  
   if (!emailField.value.length || !keyField.value.length){
