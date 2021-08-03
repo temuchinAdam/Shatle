@@ -1,21 +1,68 @@
-p {color:red;
-font-size: 20px;}
-#key {color:blue;}
+body{
+    margin: 0;
+    font-family:  'Kaushan', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+.page{
+    overflow: hidden;
+}
+/*container*/
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.intro{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('/../Finally/img/1.jpg') center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+     min-height: 820px;
+     position: relative;
+}
+.intro__inner{
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#key {color:black;}
 input{
-    color:red;}
-    form{background-color: rgb(226, 183, 148);}
+    color: black;
+border-radius: 5px;}
+form{background-color: rgb(216, 143, 130);}
 legend{font-size: 40px;}
 
     
-    form{margin:100px;
+form{margin:100px;
     padding: 10px;
-    opacity:0.5;}
+    opacity:0.5;
+border-radius: 10px;}
 form:hover{opacity:0.8;}
 input:invalid{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 166, 0);
+    border-radius: 10px;
 }
 input:valid{
-    border: 2px solid black
+    border: 2px solid rgb(219, 235, 78)
 }
 #welcome{color: orange;
 font-size: 150px;

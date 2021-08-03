@@ -71,29 +71,29 @@ function onSubmit(){
 }
   
 
-reg?.addEventListener("submit", (event) => {
-  event.preventDefault()
-  cor()
-})  
+// reg?.addEventListener("submit", (event) => {
+//   event.preventDefault()
+//   cor()
+// })  
 
-function cor(){ 
-  if (newkey1.value === newkey2.value || !newemail.value.length){
-    users.push({
-      log: newemail.value,
-      pass: newkey1.value
+// function cor(){ 
+//   if (newkey1.value === newkey2.value || !newemail.value.length){
+//     users.push({
+//       log: newemail.value,
+//       pass: newkey1.value
       
-    }
-  );
-  location.href = 'enter.html'; 
-  } else{
-    alert('Пароли не совпадают')
-  }
-}
-console.log(users);
-let database
-fetch('https://gist.githubusercontent.com/oDASCo/3f4014d24dc79e1e29b58bfa96afaa1b/raw/677516ee3bd278f7e3d805108596ca431d00b629/db.json')
-.then((response) => response.json())
-.then((data) => database = data)
+//     }
+//   );
+//   location.href = 'enter.html'; 
+//   } else{
+//     alert('Пароли не совпадают')
+//   }
+// }
+// console.log(users);
+// let database
+// fetch('https://gist.githubusercontent.com/oDASCo/3f4014d24dc79e1e29b58bfa96afaa1b/raw/677516ee3bd278f7e3d805108596ca431d00b629/db.json')
+// .then((response) => response.json())
+// .then((data) => database = data)
 
 
 
